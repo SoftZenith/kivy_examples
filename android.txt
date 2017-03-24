@@ -1,0 +1,3 @@
+title=Input Text
+author=<Bryan G/>
+orientation=landscape

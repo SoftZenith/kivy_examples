@@ -1,0 +1,46 @@
+<Label>:
+    size_hint_x: None
+    width: 60
+    #text_size: 100, None
+
+<TextInput>:
+    multiline: False
+    height: 30
+    font_size: 40
+
+<ContainerBox>:
+
+    cols: 2
+    padding: 20
+    spacing: 15
+    row_force_default: True
+    row_default_height: 50
+
+    Label:
+        text: "CP Origen: "
+        width: 60
+
+    TextInput:
+        id: origen
+
+    Label:
+        text: "CP Destino: "
+
+    TextInput:
+        id: destino
+        on_focus: etiqueta.text = 'Sin presionar'
+
+    Label:
+        text: "Peso: "
+
+    TextInput:
+
+    Label:
+        id: etiqueta
+        text: "Sin presionar"
+
+    Button:
+        text: "Click me"
+        width: 60
+        on_release: root.callback()
+        size_hint_x: 50
